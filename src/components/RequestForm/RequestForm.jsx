@@ -1,11 +1,6 @@
 import Button from "@mui/joy/Button";
 import "./RequestForm.css";
-import {
-	FormControl,
-	FormLabel,
-	Input,
-	Typography,
-} from "@mui/joy";
+import { FormControl, FormLabel, Input, Typography } from "@mui/joy";
 import { useState } from "react";
 
 export default function RequestForm() {
@@ -21,11 +16,11 @@ export default function RequestForm() {
 	};
 
 	const handleSubmit = (event) => {
-		const url = "http://localhost:8001";
+		const url = "http://localhost:8080";
 		event.preventDefault();
 		console.log(`${titleState} - ${artistState}`);
 		const response = fetch(
-			`${url}/request?title=${titleState}&artist=${artistState}`,
+			`${url}/request_song?title=${titleState}&artist=${artistState}`,
 			{
 				method: "POST",
 			}
