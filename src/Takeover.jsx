@@ -62,7 +62,7 @@ export default function Takeover() {
 	} else {
 		return (
 			<div className="App">
-				<div className="form-container">
+				<div className="">
 					<Typography level="h1">Takeover</Typography>
 					<Typography level="h2">No one is connected.</Typography>
 					<Button
