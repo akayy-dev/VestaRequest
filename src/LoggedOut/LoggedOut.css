@@ -1,0 +1,39 @@
+.glassbox {
+	/* TODO: Add drop shadow */
+	@apply bg-stainedglass bg-opacity-40 drop-shadow-xl;
+	color: white;
+	font-family: "Inria Sans";
+	border-radius: 21px;
+	width: 325px;
+	height: 148px;
+}
+
+.inner {
+	padding-left: 41px;
+	padding-right: 41px;
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	gap: 20px;
+	font-size: 20px;
+}
+
+.header {
+	text-align: center;
+	padding-top: 30px;
+}
+
+.text {
+	text-align: center;
+	/* Not my favorite way of aligning. */
+	position: relative;
+	top: -10px;
+}
+
+.loggedout {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 55px;
+}

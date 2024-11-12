@@ -4,6 +4,7 @@ import NowPlaying from "./NowPlaying/NowPlaying";
 import Button from "./Button/Button";
 import { useCallback } from "react";
 import { useState } from "react";
+import LoggedOut from "./LoggedOut/LoggedOut";
 
 function App() {
 	const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -26,7 +27,7 @@ function App() {
 
 	return (
 		<div className="App">
-			{!isAuthenticated ? (
+			{isAuthenticated ? (
 				// This only shows if someone is authenticated
 				<div className="nowplaying">
 					<NowPlaying />
@@ -36,7 +37,9 @@ function App() {
 				// This only shows if no one is authenticated.
 
 				// TODO: Make a takeover component.
-				<div></div>
+				<div className="loggedout">
+					<LoggedOut />
+				</div>
 			)}
 		</div>
 	);

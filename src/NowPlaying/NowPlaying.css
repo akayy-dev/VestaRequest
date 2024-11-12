@@ -1,4 +1,5 @@
 
+/* This just stopped working for some reason? switched to using glasscontainer in index.css */
 .glassbox {
 	/* TODO: Add drop shadow */
 	@apply bg-stainedglass bg-opacity-40 shadow-xl;

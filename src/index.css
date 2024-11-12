@@ -3,18 +3,18 @@
 @tailwind utilities;
 
 #root {
-  @apply bg-gradient-to-br from-berry to-mango;
-  height: 100vh;
-  width: 100vw;
+	@apply bg-gradient-to-br from-berry to-mango;
+	height: 100vh;
+	width: 100vw;
 }
 
-
 .glasscontainer {
-	@apply bg-stainedglass bg-opacity-40;
+	@apply bg-stainedglass bg-opacity-40 drop-shadow-md;
 	color: white;
 	font-family: "Inria Sans";
 	border-radius: 21px;
-	width: 447px;
+	width: 325px;
+	height: 447px;
 	font-size: 20px;
 	padding: 14px;
 	text-align: center;

@@ -6,7 +6,7 @@ export default function NowPlaying() {
 	let songArtist = "The Weeknd";
 	let upNext = "Die For You";
 	return (
-		<div className="container glassbox">
+		<div className="container glasscontainer">
 			<div className="nowplaying">
 				<img
 					src="https://upload.wikimedia.org/wikipedia/en/3/39/The_Weeknd_-_Starboy.png"
