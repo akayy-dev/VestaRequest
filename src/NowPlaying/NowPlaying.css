@@ -1,7 +1,7 @@
 
 .glassbox {
 	/* TODO: Add drop shadow */
-	@apply bg-stainedglass bg-opacity-40;
+	@apply bg-stainedglass bg-opacity-40 shadow-xl;
 	color: white;
 	font-family: "Inria Sans";
 	border-radius: 21px;

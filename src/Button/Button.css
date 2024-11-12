@@ -1,5 +1,5 @@
 .btn {
-	@apply bg-stainedglass bg-opacity-40;
+	@apply bg-stainedglass bg-opacity-40 drop-shadow-sm;
 	color: white;
 	font-family: "Inria Sans";
 	border-radius: 8px;
