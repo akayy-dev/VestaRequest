@@ -20,7 +20,6 @@ function App() {
 			setIsAuthenticated(false);
 		}
 	}, []);
-
 	useEffect(() => {
 		fetchAuthStatus();
 	}, []);
@@ -31,7 +30,7 @@ function App() {
 				// This only shows if someone is authenticated
 				<div className="nowplaying">
 					<NowPlaying />
-					<Button text="Logout" />
+					<Button text="Logout"/>
 				</div>
 			) : (
 				// This only shows if no one is authenticated.
