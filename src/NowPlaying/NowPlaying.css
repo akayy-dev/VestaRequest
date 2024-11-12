@@ -1,0 +1,42 @@
+
+.glassbox {
+	/* TODO: Add drop shadow */
+	@apply bg-stainedglass bg-opacity-40;
+	color: white;
+	font-family: "Inria Sans";
+	border-radius: 21px;
+	width: 447px;
+}
+
+.albumart {
+	border-radius: 15px;
+	width: 360px;
+	height: 360px;
+	align-self: center;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+}
+
+.nowplaying {
+	margin: 20px;
+	font-size: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	justify-content: center;
+	align-content: center;
+}
+
+
+.nowplayingtext {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	gap: 27px;
+}
+.upnext {
+	font-size: 16px;
+}
