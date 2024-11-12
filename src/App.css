@@ -6,3 +6,10 @@
   min-height: 100vh; /* Ensure it takes the full viewport height */
   gap: 46px;
 }
+
+.nowplaying {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
