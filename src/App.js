@@ -20,6 +20,12 @@ function App() {
 			setIsAuthenticated(false);
 		}
 	}, []);
+
+	const logout = useCallback(async () => {
+		await fetch("http://localhost:8080/logout");
+		window.location.reload();
+	});
+
 	useEffect(() => {
 		fetchAuthStatus();
 	}, []);
@@ -30,7 +36,7 @@ function App() {
 				// This only shows if someone is authenticated
 				<div className="nowplaying">
 					<NowPlaying />
-					<Button text="Logout"/>
+					<Button text="Logout" handleClick={logout} />
 				</div>
 			) : (
 				// This only shows if no one is authenticated.
