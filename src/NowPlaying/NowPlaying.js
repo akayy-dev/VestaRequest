@@ -2,7 +2,6 @@ import "./NowPlaying.css";
 import { useEffect, useState } from "react";
 
 export default function NowPlaying() {
-	// TODO: Get the connected user.
 	const [connectedUser, setConnectedUser] = useState("ahaduk");
 	const [albumArt, setAlbumArt] = useState("");
 	const [songTitle, setSongTitle] = useState("Starboy");
