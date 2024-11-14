@@ -4,11 +4,13 @@ import Takeover from "./pages/Takeover/Takeover";
 
 function App() {
 	return (
-		<Router>
-			<Routes>
-				<Route path="/takeover" element={<Takeover />} />
-			</Routes>
-		</Router>
+		<div className="App">
+			<Router>
+				<Routes>
+					<Route path="/takeover" element={<Takeover />} />
+				</Routes>
+			</Router>
+		</div>
 	);
 }
 

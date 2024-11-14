@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useState } from "react";
-import LoggedOut from "../../LoggedOut/LoggedOut";
-import NowPlaying from "../../NowPlaying/NowPlaying";
-import Button from "../../Button/Button";
+import LoggedOut from "../../components/LoggedOut/LoggedOut";
+import NowPlaying from "../../components/NowPlaying/NowPlaying";
+import Button from "../../components/Button/Button";
+import './Takeover.css'
 
 export default function Takeover() {
 	const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -11,7 +12,6 @@ export default function Takeover() {
 			const response = await fetch("http://localhost:8080/auth_status");
 			const data = await response.json();
 			setIsAuthenticated(data.data);
-			console.log(isAuthenticated);
 		} catch (error) {
 			console.error("Error fetching auth status:", error);
 			setIsAuthenticated(false);
@@ -27,7 +27,7 @@ export default function Takeover() {
 		fetchAuthStatus();
 	}, []);
 	return (
-		<div className="App">
+		<div>
 			{isAuthenticated ? (
 				// This only shows if someone is authenticated
 				<div className="nowplaying">

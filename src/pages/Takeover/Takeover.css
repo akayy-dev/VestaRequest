@@ -1,0 +1,8 @@
+.loggedout {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 55px;
+	height: 148px;
+}
