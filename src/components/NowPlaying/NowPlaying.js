@@ -12,13 +12,11 @@ export default function NowPlaying() {
 
 	const setStates = () => {
 		try {
-			console.log(finishedLoading);
 			const response = fetch("http://localhost:8080/current")
 				.then((response) => response.json())
 				.then((json) => {
 					if (json.isPlaying == false) {
 						// if nothing is playing
-						console.log("Nothing is playing");
 						setIsPlaying(false);
 					} else {
 						setAlbumArt(json.nowPlaying.albumArt);
@@ -37,6 +35,12 @@ export default function NowPlaying() {
 
 	useEffect(() => {
 		setStates();
+		const interval = setInterval(() => {
+			setStates();
+		}, 5000);
+
+		// stop the interval when the component destroyed.
+		return () => clearInterval(interval)
 	}, []);
 
 	return (
