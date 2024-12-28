@@ -42,7 +42,7 @@ export default function Takeover() {
 			// It's unsafe to leave the user with the token still in their omnibar,
 			// this is because every time the user reloads the page after they login they will submit the code to their backend.
 			// This line removes the code from their omnibar after submission.
-			window.location.replace("http://localhost:3001/takeover")
+			window.location.replace(`${window.location.origin}/takeover`)
 		}
 		// test before you push this.
 		fetchAuthStatus();
